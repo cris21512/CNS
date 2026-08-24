@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import Button from './Components/Button/Button.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,9 +19,7 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+          <p>Hola</p>
         </div>
         <button
           type="button"
@@ -28,6 +28,7 @@ function App() {
         >
           Count is {count}
         </button>
+        <Button />
       </section>
 
       <div className="ticks"></div>
@@ -38,7 +39,6 @@ function App() {
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
           <h2>Documentation</h2>
-          <p>Your questions, answered</p>
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank">
